@@ -1,57 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>ToDo List</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Poppins:wght@200;300;400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
 </head>
-
 <body>
-    <section>
-        <header>
-            <div class="logo"><a href="#">WebEnd</a></div>
-            <ul class="navlist">
-                <li class="items"><a href="#">Home</a></li>
-                <li class="items"><a href="https://github.com/Kalpesh5315" target="_blank">GitHub</a></li>
-                <li class="items"><a href="https://www.linkedin.com/in/kalpesh-palve/" target="_blank">Linkedin</a></li>
-                <li class="items"><a href="#">Contact</a></li>
-            </ul>
-            <div class="toggle_btn"><a href="#"><i class="fa-solid fa-bars"></i></a></div>
-        </header>
-        <div class="hero">
-            <div class="hero_text">
-                <h5>#2 Trending</h5>
-                <h4>Business Insider</h4>
-                <h1>Programmer</h1>
-                <p>Join millions of developers worldwide as you build as  your village,<br>
-                    raise a code and compete in epic code wars!!</p>
-                <a href="#" class="compare">COMPARE</a>
-                <a href="#" class="ctaa"><i class="fa-solid fa-play"></i> WATCH GAMEPLAY</a>
-            </div>
-            <div class="hero-img">
-                <img src="./newgif.gif">
-            </div>
-
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div id="app">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
         </div>
-        <footer>
-            <marquee behavior="scroll" direction="left" scrollamount="5">
-                Made with ❤️ by Kalpesh Palve
-            </marquee>
-            </footer>
-    </section>
-   
+    </div>
+    <script src="app.js"></script>
 </body>
-
 </html>
